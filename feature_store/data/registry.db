@@ -1,0 +1,42 @@
+
+I
+)
+ticker"tickerJbuild_stock_agent_ops
+ë­ÔØÏ¾¥‚š­ÔèúŠÖ
+L
+,
+__dummy"
+__dummy_idJbuild_stock_agent_ops
+ë­ÔÈ‡¼¥‚š­ÔàÊÖ1"$60558373-5995-4382-a2ee-1d49bb087bc0*Íš­Ô¨¶µõ2ñ
+±
+stock_featuresbuild_stock_agent_opsticker"
+Open"
+High"
+Low"	
+Close"
+
+Volume"	
+RSI14"
+MACD2€¼àß:—event_timestampZdata/features.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢stock_features_source’‚š­ÔØ¢ÒÍ"‚š­ÔøÀäÕ@b
+
+ticker’latest;
+ë­Ô¸ï©¥Íš­ÔÀÉ¬õ
+ÍŞÌôúÿÿÿÿÈÔÅÔËš­Ô0b¯event_timestampZdata/features.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢stock_features_sourceªbuild_stock_agent_ops’ë­Ô œ€¡"ë­Ô ‰¤¥Š7
+
+build_stock_agent_ops
+ë­Ô˜§™¡‚š­ÔĞ­ëÍ’Á
+¾
+stock_featuresbuild_stock_agent_ops"feature_view*Ò
+±
+stock_featuresbuild_stock_agent_opsticker"
+Open"
+High"
+Low"	
+Close"
+
+Volume"	
+RSI14"
+MACD2€¼àß:—event_timestampZdata/features.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢stock_features_source’ë­Ô œ€¡"ë­Ô ‰¤¥@b
+
+ticker’latest
+ë­Ô¸ï©¥ë­Ô¸ï©¥2ë­ÔĞ´º¥B$6af3d4ba-a4d6-4b94-8c02-d4d6e970eaba

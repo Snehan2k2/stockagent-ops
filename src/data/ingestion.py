@@ -28,3 +28,12 @@ def fetch_ohlcv(ticker: str, start: str) -> pd.DataFrame:
     df["MACD"] = macd(df["Close"])
     df = df.dropna()
     return df
+
+
+def save_to_feature_store(df: pd.DataFrame, ticker: str, path: str = "feature_store/data/features.parquet") -> None:
+    """Write engineered features into Feast's offline source (Parquet)."""
+    out = df.copy()
+    out["ticker"] = ticker
+    out["event_timestamp"] = pd.to_datetime(out["date"])
+    out = out.drop(columns=["date"])
+    out.to_parquet(path, index=False)

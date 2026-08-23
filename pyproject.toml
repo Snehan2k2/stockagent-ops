@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "feast>=0.60",
+    "feast[redis]>=0.60",
     "pandas<3",
     "yfinance>=1.6.0",
 ]
