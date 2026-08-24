@@ -5,7 +5,14 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "fastapi>=0.141.1",
     "feast[redis]>=0.60",
+    "langchain-ollama>=1.1.0",
+    "langgraph>=1.2.11",
+    "mlflow>=3.15.1",
     "pandas<3",
+    "redis>=7.4.1",
+    "requests>=2.34.2",
+    "uvicorn>=0.34.0",
     "yfinance>=1.6.0",
 ]
