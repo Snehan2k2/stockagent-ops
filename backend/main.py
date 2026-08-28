@@ -12,7 +12,8 @@ from src.agents.semantic_cache import find_similar
 from src.agents.semantic_cache import store as store_semantic
 
 app = FastAPI(title="build-stock-agent-ops")
-redis_client = redis.Redis(host="localhost", port=6379, decode_responses=True)
+#redis_client = redis.Redis(host="localhost", port=6379, decode_responses=True)
+redis_client = redis.Redis(host="redis", port=6379, decode_responses=True)
 
 from prometheus_fastapi_instrumentator import Instrumentator
 Instrumentator().instrument(app).expose(app)

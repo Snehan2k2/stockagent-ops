@@ -15,8 +15,8 @@ COLLECTION = "analysis_cache"
 SIMILARITY_THRESHOLD = 0.95
 EMBED_DIM = 768
 
-qdrant = QdrantClient(host="localhost", port=6333)
-
+#qdrant = QdrantClient(host="localhost", port=6333)
+qdrant = QdrantClient(host="qdrant", port=6333)
 
 def _ensure_collection():
     existing = [c.name for c in qdrant.get_collections().collections]
@@ -28,10 +28,14 @@ def _ensure_collection():
 
 
 def embed(text: str) -> list[float]:
+    # resp = requests.post(
+    #     "http://localhost:11434/api/embeddings",
+    #     json={"model": "nomic-embed-text", "prompt": text},
+    # )
     resp = requests.post(
-        "http://localhost:11434/api/embeddings",
+        "http://host.docker.internal:11434/api/embeddings",
         json={"model": "nomic-embed-text", "prompt": text},
-    )
+    ) # reach out of this container to the actual host machine
     return resp.json()["embedding"]
 
 
