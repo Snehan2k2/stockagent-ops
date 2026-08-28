@@ -14,7 +14,8 @@ if st.button("Analyze"):
         with st.spinner("Analyzing..."):
             params = {"question": question} if question else {}
             try:
-                resp = requests.get(f"http://127.0.0.1:8000/analyze/{ticker}", params=params, timeout=60)
+                #resp = requests.get(f"http://127.0.0.1:8000/analyze/{ticker}", params=params, timeout=60)
+                resp = requests.get(f"http://backend:8000/analyze/{ticker}", params=params, timeout=60)
                 resp.raise_for_status()
                 data = resp.json()
             except requests.exceptions.RequestException as e:
